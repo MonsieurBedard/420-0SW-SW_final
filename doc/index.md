@@ -13,6 +13,25 @@ Utilisation de Godot + GDScript.
 - Utilisation de la [documentation officiel de godot](https://docs.godotengine.org/en/stable/) sur le web et dans l'éditeur.
 - Utilisation de [Aseprite](https://www.aseprite.org/) pour les assets.
 
+## Sujets
+
+- Génération procédurale de la piste de course.
+  1. Création d'un nuage de points random.
+  2. Utilisation de la marche de jarvis afin de trouver l'enveloppe convexe.
+  3. Utilisation de A\* afin de construire la piste à partir du résulta de la marche de jarvis.
+- Véhicule.
+  - Collision entre voiture et voiture et entre voiture et environnement.
+  - Caméra suivant la position du joueur.
+  - Automate suivant la piste et complétant des tours de façon autonome.
+  - Simulation réaliste des véhicules.
+- Godot.
+  - Système de menu fonctionnel.
+    - Menu principal
+    - Menu de pause
+    - Menu de fin de partie
+  - Utilisation des contrôles.
+    - Contrôle avec clavier ou manette durant la partie.
+
 ## Références
 
 [Inspiration pour la création de piste:](https://www.gamasutra.com/blogs/GustavoMaciel/20131229/207833/Generating_Procedural_Racetracks.php)
