@@ -1,0 +1,144 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scripts/GUI.gd" type="Script" id=1]
+[ext_resource path="res://assets/fonts/Early GameBoy.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/fonts/gameboy_20.tres" type="DynamicFont" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 20
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 64
+font_data = ExtResource( 2 )
+
+[node name="GUI" type="CanvasLayer"]
+layer = 5
+script = ExtResource( 1 )
+
+[node name="Container" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 20.0
+margin_top = 20.0
+margin_right = -20.0
+margin_bottom = -20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Separator" type="HBoxContainer" parent="Container"]
+margin_right = 984.0
+margin_bottom = 560.0
+
+[node name="StatContainer" type="VBoxContainer" parent="Container/Separator"]
+margin_right = 740.0
+margin_bottom = 560.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="SpeedContainer" type="HBoxContainer" parent="Container/Separator/StatContainer"]
+margin_right = 740.0
+margin_bottom = 25.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpeedLabel" type="Label" parent="Container/Separator/StatContainer/SpeedContainer"]
+margin_right = 120.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0.929412, 1, 1 )
+text = "Speed:"
+
+[node name="SpeedValue" type="Label" parent="Container/Separator/StatContainer/SpeedContainer"]
+margin_left = 124.0
+margin_right = 184.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 1 )
+text = "000"
+
+[node name="PositionContainer" type="HBoxContainer" parent="Container/Separator/StatContainer"]
+margin_top = 29.0
+margin_right = 740.0
+margin_bottom = 54.0
+
+[node name="PositionLabel" type="Label" parent="Container/Separator/StatContainer/PositionContainer"]
+margin_right = 180.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0.929412, 1, 1 )
+text = "Position:"
+
+[node name="PositionValue" type="Label" parent="Container/Separator/StatContainer/PositionContainer"]
+margin_left = 184.0
+margin_right = 354.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 1 )
+text = "1 out of 6"
+
+[node name="TurnContainer" type="HBoxContainer" parent="Container/Separator/StatContainer"]
+margin_top = 58.0
+margin_right = 740.0
+margin_bottom = 83.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TurnLabel" type="Label" parent="Container/Separator/StatContainer/TurnContainer"]
+margin_right = 100.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0.929412, 1, 1 )
+text = "Turn:"
+
+[node name="TurnValue" type="Label" parent="Container/Separator/StatContainer/TurnContainer"]
+margin_left = 104.0
+margin_right = 164.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 1 )
+text = "000"
+
+[node name="LeaderboardContainer" type="VBoxContainer" parent="Container/Separator"]
+margin_left = 744.0
+margin_right = 984.0
+margin_bottom = 560.0
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Container/Separator/LeaderboardContainer"]
+margin_right = 240.0
+margin_bottom = 25.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0, 0.929412, 1, 1 )
+text = "leaderboard:"
+align = 2
+
+[node name="LeaderboardContent" type="Label" parent="Container/Separator/LeaderboardContainer"]
+margin_top = 29.0
+margin_right = 240.0
+margin_bottom = 54.0
+custom_fonts/font = ExtResource( 3 )
+text = "---"
+
+[node name="CenterContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 150.0
+margin_top = 150.0
+margin_right = -150.0
+margin_bottom = -150.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_right = 724.0
+margin_bottom = 300.0
+
+[node name="TimeLabel" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_right = 724.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0.929412, 1, 1 )
+text = "000"
+align = 1

@@ -1,0 +1,129 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://scripts/racetrack.gd" type="Script" id=1]
+[ext_resource path="res://assets/dark-grass.png" type="Texture" id=2]
+[ext_resource path="res://assets/road-spritesheet.png" type="Texture" id=3]
+[ext_resource path="res://scenes/PauseMenu.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/GUI.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/FinalDialog.tscn" type="PackedScene" id=7]
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 75.8051, 4.83734, 123.259, 4.25861, 178.236, 9.82867, 200.805, 20.2453, 230.898, 46.287, 235.527, 78.6944, 249.995, 96.0555, 253.467, 124.991, 257.518, 169.551, 247.68, 195.593, 230.319, 231.472, 210.643, 244.782, 166.661, 248.833, 119.208, 255.199, 66.5458, 252.305, 38.1893, 239.574, 27.1939, 226.843, 20.8281, 206.009, 6.93927, 184.018, 3.46704, 156.819, 4.62451, 138.88, 8.67542, 107.63, 2.88837, 79.8518, 8.09668, 67.1203, 14.4624, 46.287, 19.6708, 26.0323, 23.1429, 15.037 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 33.3672, 26.8281, 51.307, 15.8327, 79.6635, 13.5179, 102.233, 4.25861, 122.488, 10.6243, 164.154, 5.41602, 201.191, 16.7731, 228.39, 19.6666, 234.756, 32.3981, 239.386, 49.7592, 242.279, 75.8008, 242.858, 91.4258, 254.432, 101.264, 256.168, 151.032, 247.488, 160.292, 243.437, 177.074, 237.071, 193.278, 220.867, 229.157, 211.608, 235.523, 182.673, 241.31, 131.747, 255.778, 114.386, 245.361, 94.131, 240.731, 82.557, 236.102, 55.3579, 236.68, 32.2097, 229.157, 17.1635, 215.268, 19.4783, 189.227, 8.48291, 155.083, 0.959717, 137.143, 2.11719, 122.676, 3.85327, 109.944, 4.43201, 93.7407, 10.219, 75.2222, 16.5847, 62.4907, 17.7422, 45.1296, 30.4736, 35.8703, 37.9968, 24.8749 )
+
+[sub_resource type="TileSet" id=3]
+0/name = "road-spritesheet.png 0"
+0/texture = ExtResource( 3 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 1536, 1536 )
+0/tile_mode = 1
+0/autotile/bitmask_mode = 1
+0/autotile/bitmask_flags = [ Vector2( 0, 0 ), 144, Vector2( 0, 1 ), 146, Vector2( 0, 2 ), 18, Vector2( 0, 3 ), 432, Vector2( 0, 4 ), 438, Vector2( 0, 5 ), 54, Vector2( 1, 0 ), 48, Vector2( 1, 1 ), 176, Vector2( 1, 2 ), 50, Vector2( 1, 3 ), 504, Vector2( 1, 4 ), 511, Vector2( 1, 5 ), 63, Vector2( 2, 0 ), 56, Vector2( 2, 1 ), 152, Vector2( 2, 2 ), 26, Vector2( 2, 3 ), 216, Vector2( 2, 4 ), 219, Vector2( 2, 5 ), 27, Vector2( 3, 0 ), 24, Vector2( 3, 1 ), 186, Vector2( 4, 0 ), 184, Vector2( 4, 1 ), 178, Vector2( 5, 0 ), 154, Vector2( 5, 1 ), 58 ]
+0/autotile/icon_coordinate = Vector2( 2, 0 )
+0/autotile/tile_size = Vector2( 256, 256 )
+0/autotile/spacing = 0
+0/autotile/occluder_map = [  ]
+0/autotile/navpoly_map = [  ]
+0/autotile/priority_map = [  ]
+0/autotile/z_index_map = [  ]
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 1 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 3, 2 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "road-spritesheet.png 1"
+1/texture = ExtResource( 3 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 768, 512, 256, 256 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 2 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "road-spritesheet.png 2"
+2/texture = ExtResource( 3 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 1024, 512, 256, 256 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 0
+
+[node name="racetrack" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 19187.0
+margin_bottom = 16520.0
+texture = ExtResource( 2 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RoadMap" type="TileMap" parent="."]
+position = Vector2( -1, -1 )
+z_index = 1
+tile_set = SubResource( 3 )
+cell_size = Vector2( 256, 256 )
+cell_custom_transform = Transform2D( 0, 0, 0, 0, 0, 0 )
+collision_layer = 2147483650
+collision_mask = 2147483648
+format = 1
+
+[node name="Player" parent="." instance=ExtResource( 6 )]
+
+[node name="RoadAread2d" type="Area2D" parent="."]
+z_index = 2
+collision_layer = 2
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 6.0
+
+[node name="GUI" parent="." instance=ExtResource( 5 )]
+
+[node name="PauseMenu" parent="." instance=ExtResource( 4 )]
+
+[node name="FinalDialog" parent="." instance=ExtResource( 7 )]
+[connection signal="countdown" from="." to="GUI" method="_on_racetrack_countdown"]
+[connection signal="finished" from="." to="FinalDialog" method="_on_racetrack_finished"]
+[connection signal="leaderboard" from="." to="GUI" method="_on_racetrack_leaderboard"]
+[connection signal="pos" from="." to="GUI" method="_on_racetrack_pos"]
+[connection signal="stop_countdown" from="." to="GUI" method="_on_racetrack_stop_countdown"]
+[connection signal="current_position" from="Player" to="GUI" method="_on_Player_current_position"]
+[connection signal="current_position" from="Player" to="." method="_on_Player_current_position"]
+[connection signal="current_speed" from="Player" to="GUI" method="_on_Player_current_speed"]
+[connection signal="current_turn" from="Player" to="GUI" method="_on_Player_current_turn"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

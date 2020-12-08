@@ -1,0 +1,50 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/alexandre/Etudes/5-Automne_2020/420-0SW-SW_programmation_jeux_et_multimedia/final/racetrack/racetrack.csproj": {}
+  },
+  "projects": {
+    "/home/alexandre/Etudes/5-Automne_2020/420-0SW-SW_programmation_jeux_et_multimedia/final/racetrack/racetrack.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/alexandre/Etudes/5-Automne_2020/420-0SW-SW_programmation_jeux_et_multimedia/final/racetrack/racetrack.csproj",
+        "projectName": "racetrack",
+        "projectPath": "/home/alexandre/Etudes/5-Automne_2020/420-0SW-SW_programmation_jeux_et_multimedia/final/racetrack/racetrack.csproj",
+        "packagesPath": "/home/alexandre/.nuget/packages/",
+        "outputPath": "/home/alexandre/Etudes/5-Automne_2020/420-0SW-SW_programmation_jeux_et_multimedia/final/racetrack/.mono/temp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/alexandre/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.108/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

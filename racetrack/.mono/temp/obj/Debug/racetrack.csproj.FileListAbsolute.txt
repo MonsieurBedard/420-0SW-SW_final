@@ -1,0 +1,7 @@
+/home/alexandre/Etudes/5-Automne_2020/420-0SW-SW_programmation_jeux_et_multimedia/final/racetrack/.mono/temp/bin/Debug/racetrack.dll
+/home/alexandre/Etudes/5-Automne_2020/420-0SW-SW_programmation_jeux_et_multimedia/final/racetrack/.mono/temp/bin/Debug/racetrack.pdb
+/home/alexandre/Etudes/5-Automne_2020/420-0SW-SW_programmation_jeux_et_multimedia/final/racetrack/.mono/temp/obj/Debug/racetrack.csprojAssemblyReference.cache
+/home/alexandre/Etudes/5-Automne_2020/420-0SW-SW_programmation_jeux_et_multimedia/final/racetrack/.mono/temp/obj/Debug/racetrack.AssemblyInfoInputs.cache
+/home/alexandre/Etudes/5-Automne_2020/420-0SW-SW_programmation_jeux_et_multimedia/final/racetrack/.mono/temp/obj/Debug/racetrack.AssemblyInfo.cs
+/home/alexandre/Etudes/5-Automne_2020/420-0SW-SW_programmation_jeux_et_multimedia/final/racetrack/.mono/temp/obj/Debug/racetrack.dll
+/home/alexandre/Etudes/5-Automne_2020/420-0SW-SW_programmation_jeux_et_multimedia/final/racetrack/.mono/temp/obj/Debug/racetrack.pdb
